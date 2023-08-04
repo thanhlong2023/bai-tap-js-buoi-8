@@ -85,7 +85,9 @@ function soChanCuoi() {
     getEle("soChanCuoi").innerHTML = "Số chẵn cuối cùng: " + num;
 }
 
+
 function swap(n, r) {
+
     var e = numArray[n];
     numArray[n] = numArray[r],
         numArray[r] = e;

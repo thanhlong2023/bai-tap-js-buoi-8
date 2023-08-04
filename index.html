@@ -155,7 +155,8 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseThree"
+                        onclick="bai6()">
                         6 - Đổi chỗ
                     </button>
                 </h2>
@@ -174,6 +175,19 @@
                             <div class="col-12">
                                 <button class="btn btn-primary me-1 mb-1" type="button" onclick="doiViTri()">Đổi
                                     chỗ</button>
+                                <p class="alert alert-danger">Xin lưu ý: index test ở bài 6 phải là dữ liệu hợp lệ nếu
+                                    nhập các trường hợp không hợp lệ mảng sẻ bị sai và ảnh hưởng đến kết quả bài 8
+                                    <br>Ví
+                                    dụ: Mảng a có 2 phần tử 1 và 2 👉 1, 2
+                                    <br>Trường hợp đúng: đổi chỗ index 0 và 1
+                                    <br>Trường hợp gây lôi: đổi chổ index 0(hoặc có thể là các index bất kì) với index
+                                    1000000 (index không có trong mảng)
+                                    <br>
+                                    Mảng sẻ hiện <br>
+                                    👉1,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+                                    <span style="color: red;">Gây lỗi ở các bài khác. Cảm ơn vì đã đọc (trên đây là 1
+                                        trong những ví dụ sai, không bao hàm hết tất cả các trường hợp.)</span>
+                                </p>
                             </div>
                             <div class="alert alert-success" role="alert">
                                 👉<span id="txtChangePos"></span>
